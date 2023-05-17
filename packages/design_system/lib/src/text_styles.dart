@@ -24,6 +24,21 @@ class DsTextStyles {
     fontWeight: FontWeight.w500,
   );
 
+  static final TextStyle mobile1 = GoogleFonts.roboto(
+    fontSize: 30,
+    fontWeight: FontWeight.w700,
+  );
+
+  static final TextStyle mobile2 = GoogleFonts.roboto(
+    fontSize: 26,
+    fontWeight: FontWeight.w500,
+  );
+
+  static final TextStyle mobile3 = GoogleFonts.roboto(
+    fontSize: 17,
+    fontWeight: FontWeight.w700,
+  );
+
   static final TextStyle bodyNormal = GoogleFonts.roboto(
     fontSize: 16,
     fontWeight: FontWeight.w500,
