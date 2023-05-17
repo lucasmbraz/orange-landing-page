@@ -1,3 +1,4 @@
+import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -5,8 +6,32 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Placeholder(),
+    return Scaffold(
+      body: Center(
+        child: Row(
+          children: [
+            Flexible(
+              child: Column(
+                children: [
+                  Flexible(
+                    child: DsText.heading1(
+                      'Subscribe today and get notified first when we launch Orange app!',
+                      color: DsColors.white,
+                    ),
+                  ),
+                  const SizedBox(height: 25),
+                  Flexible(
+                    child: DsText.bodyEmphasis(
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+                      color: DsColors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
