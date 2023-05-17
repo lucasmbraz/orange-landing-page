@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                             children: [
                               const Expanded(child: TextField()),
                               const SizedBox(width: 16),
-                              ElevatedButton(
+                              DsButton(
                                 onPressed: () {},
                                 child: const Text('Subscribe now'),
                               ),

@@ -4,6 +4,7 @@ class DsColors {
   DsColors._();
 
   static const orangeFull = DsColor._(0xFFF8765E);
+  static const lightBlue = DsColor._(0xFF9BDBE7);
   static const white = DsColor._(0xFFFFFFFF);
 }
 

@@ -34,6 +34,11 @@ class DsTextStyles {
     fontWeight: FontWeight.w700,
   );
 
+  static final TextStyle button = GoogleFonts.roboto(
+    fontSize: 20,
+    fontWeight: FontWeight.w700,
+  );
+
   static final TextStyle logo = GoogleFonts.roboto(
     fontSize: 26,
     fontWeight: FontWeight.w900,
