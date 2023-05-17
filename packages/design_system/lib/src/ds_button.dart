@@ -27,7 +27,7 @@ class DsButton extends StatelessWidget {
           textStyle: DsTextStyles.button,
         ),
         child: Padding(
-          padding: const EdgeInsets.all(18),
+          padding: const EdgeInsets.all(15),
           child: child,
         ),
       ),

@@ -41,7 +41,12 @@ class HomePage extends StatelessWidget {
                           const SizedBox(height: 40),
                           Row(
                             children: [
-                              const Expanded(child: TextField()),
+                              const Expanded(
+                                child: DsTextFormField(
+                                  hint: 'Your email address',
+                                  textInputType: TextInputType.emailAddress,
+                                ),
+                              ),
                               const SizedBox(width: 16),
                               DsButton(
                                 onPressed: () {},
