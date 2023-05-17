@@ -33,4 +33,14 @@ class DsTextStyles {
     fontSize: 16,
     fontWeight: FontWeight.w700,
   );
+
+  static final TextStyle logo = GoogleFonts.roboto(
+    fontSize: 26,
+    fontWeight: FontWeight.w900,
+  );
+
+  static final TextStyle navItem = GoogleFonts.roboto(
+    fontSize: 17,
+    fontWeight: FontWeight.w900,
+  );
 }

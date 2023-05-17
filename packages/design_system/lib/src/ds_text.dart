@@ -17,6 +17,10 @@ class DsText extends StatelessWidget {
       : this._(text, color, DsTextStyles.bodyNormal);
   DsText.bodyEmphasis(String text, {required DsColor color})
       : this._(text, color, DsTextStyles.bodyEmphasis);
+  DsText.logo(String text, {required DsColor color})
+      : this._(text, color, DsTextStyles.logo);
+  DsText.navItem(String text, {required DsColor color})
+      : this._(text, color, DsTextStyles.navItem);
 
   final String text;
   final DsColor color;
