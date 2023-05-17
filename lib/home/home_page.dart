@@ -10,8 +10,10 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: Row(
           children: [
+            const SizedBox(width: 120),
             Flexible(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Flexible(
                     child: DsText.heading1(
@@ -29,6 +31,11 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(width: 88),
+            Flexible(
+              child: Image.asset('assets/mobile.png'),
+            ),
+            const SizedBox(width: 50),
           ],
         ),
       ),
