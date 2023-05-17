@@ -36,6 +36,17 @@ class HomePage extends StatelessWidget {
                           color: DsColors.white,
                         ),
                       ),
+                      const SizedBox(height: 40),
+                      Row(
+                        children: [
+                          const Expanded(child: TextField()),
+                          const SizedBox(width: 16),
+                          ElevatedButton(
+                            onPressed: () {},
+                            child: const Text('Subscribe now'),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
