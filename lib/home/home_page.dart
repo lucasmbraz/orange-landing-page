@@ -1,6 +1,7 @@
 import 'package:design_system/design_system.dart';
 import 'package:flutter/material.dart';
 import 'package:orange_landing_page/widgets/nav_bar.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -13,9 +14,16 @@ class HomePage extends StatelessWidget {
           body: Column(
             children: [
               const SizedBox(height: 25),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 120),
-                child: NavBar(),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: getValueForScreenType<double>(
+                    context: context,
+                    mobile: 20,
+                    tablet: 60,
+                    desktop: 120,
+                  ),
+                ),
+                child: const NavBar(),
               ),
               Expanded(
                 child: Row(
